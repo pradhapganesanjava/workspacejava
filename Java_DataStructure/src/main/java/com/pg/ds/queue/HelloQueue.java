@@ -17,14 +17,14 @@ public class HelloQueue {
 
 		String[] strArr = new String[] { "A", "B", "C", "D","D"};
 
-		/*int index=0;
+		int index=0;
 		for(String str : strArr){
 			queue.add(str);
 			System.out.println(index+":"+str);
 			index++;
-		}*/
+		}
 
-		queue = loadLinkedList(strArr);
+		//queue = loadLinkedList(strArr);
 		printLinkedList(queue);
 		
 		System.out.println("queue size :"+queue.size()); //similar to peek; except throws exception if no element found

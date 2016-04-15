@@ -13,7 +13,7 @@ public class FibonacciSeq {
 	 */
 	public static void main(String[] args) {
 
-		int count = 10;
+		int count = 5;
 
 		BigInteger[] fibonacciNumArray = new BigInteger[count];
 		fibonacciNumArray[0] = new BigInteger("0");
