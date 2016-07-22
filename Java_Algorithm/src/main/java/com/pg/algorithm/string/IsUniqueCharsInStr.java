@@ -14,12 +14,36 @@ public class IsUniqueCharsInStr {
 
 		// String s = "abcdxyz ABCDXYZ!@#$%^&*()_+?><:;";
 		String s = "aabbcddxxyzz";
+		s = "abcdefghijklmnopABCDEE ";
 		// OofNsquare(s);
-		 OofN_ASCII(s);
+		//OofN_ASCII(s);
+		//isUniqueChars(s);
+		
+		String s1 = "tea";
+		String s2 = "ate";
+		
+		
+		System.out.println(strAnagramCode(s1));
+		System.out.println(strAnagramCode(s2));
+		
+			
 
-		//mergeSortWay(s);
+		// mergeSortWay(s);
+	}
+	private static boolean isAnagram(String str1, String str2){
+		return false;
 	}
 
+	private static int strAnagramCode(String str){
+		int count = 0;
+		int anagramCode = 0;
+		while(count < str.length()){
+		  	anagramCode+=str.charAt(count);
+		  	count++;
+		}
+		return anagramCode;
+	}
+	
 	private static void mergeSortWay(String s) {
 		char[] rootArr = s.toCharArray();
 		List<Character> repeatCharList = new ArrayList<Character>(rootArr.length);
@@ -57,7 +81,7 @@ public class IsUniqueCharsInStr {
 
 		while (leftArrCount < leftArr.length && rightArrCount < rightArr.length) {
 			if (leftArr[leftArrCount] == rightArr[rightArrCount]) {
-				//repeatCharArr[rootArrCount] = leftArr[leftArrCount];
+				// repeatCharArr[rootArrCount] = leftArr[leftArrCount];
 				repeatCharList.add(leftArr[leftArrCount]);
 				leftArrCount++;
 			} else {
@@ -80,6 +104,15 @@ public class IsUniqueCharsInStr {
 		}
 	}
 
+	private static void isUniqueChars(String str) {
+		for (int i = 0; i < str.length(); i++) {
+			if(str.indexOf(str.charAt(i), i + 1)>-1){
+				System.out.println("first dup char "+str.charAt(i)+"");
+				return;
+			}
+		}
+		System.out.println("NO dup char ");
+	}
 	// kind of QuickFind way
 	private static boolean OofN_ASCII(String s) {
 

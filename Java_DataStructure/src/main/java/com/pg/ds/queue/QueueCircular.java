@@ -13,7 +13,7 @@ public class QueueCircular<E> {
 	public void add(E addObj) {
 		queueArr[last] = addObj;
 		last = last+1;
-		if(last>queueArr.length && )
+		//if(last>queueArr.length && )
 	}
 
 	public E poll() {
