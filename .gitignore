@@ -13,8 +13,10 @@ bin/
 #Eclipse folders
 .settings/
 .metadata/
-#.classpath
-#.project
+.recommenders/
+RemoteSystemsTempFiles/
+.classpath
+.project
 
 #go figure...
 /.z
