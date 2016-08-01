@@ -23,7 +23,20 @@ public class HelloHeapBT {
 		System.out.println(Arrays.toString(intArr) + " IS HEAP? :" + isHeapBT(intArr) + " ArraySIZE: " + intArr.length
 				+ " HeapSize? " + getHeapSize(intArr));
 		
+		
+		
 		intArr = new int[] { 25, 14, 12, 13, 10, 8, 16 };
+
+		System.out.println(Arrays.toString(intArr) + " IS HEAP? :" + isHeapBT(intArr) + " ArraySIZE: " + intArr.length
+				+ " HeapSize? " + getHeapSize(intArr));
+		
+		
+		intArr = new int[] { 14, 13, 12, 10, 8};
+
+		System.out.println(Arrays.toString(intArr) + " IS HEAP? :" + isHeapBT(intArr) + " ArraySIZE: " + intArr.length
+				+ " HeapSize? " + getHeapSize(intArr));
+		
+		intArr = new int[] { 14, 12, 13, 8, 10};
 
 		System.out.println(Arrays.toString(intArr) + " IS HEAP? :" + isHeapBT(intArr) + " ArraySIZE: " + intArr.length
 				+ " HeapSize? " + getHeapSize(intArr));
