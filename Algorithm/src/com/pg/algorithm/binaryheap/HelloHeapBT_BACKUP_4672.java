@@ -126,13 +126,30 @@ public class HelloHeapBT {
 
 		System.out.println(Arrays.toString(intArr) + " IS HEAP? :" + isHeapBT(intArr) + " ArraySIZE: " + intArr.length
 				+ " HeapSize? " + getHeapSize(intArr));
+<<<<<<< HEAD
+		
+		
+		
+=======
 
+>>>>>>> 162459ac67b75c5b78fcab2302031ba86090cc50
 		intArr = new int[] { 25, 14, 12, 13, 10, 8, 16 };
 
 		System.out.println(Arrays.toString(intArr) + " IS HEAP? :" + isHeapBT(intArr) + " ArraySIZE: " + intArr.length
 				+ " HeapSize? " + getHeapSize(intArr));
+<<<<<<< HEAD
+		
+		
+		intArr = new int[] { 14, 13, 12, 10, 8};
+
+		System.out.println(Arrays.toString(intArr) + " IS HEAP? :" + isHeapBT(intArr) + " ArraySIZE: " + intArr.length
+				+ " HeapSize? " + getHeapSize(intArr));
+		
+		intArr = new int[] { 14, 12, 13, 8, 10};
+=======
 
 		intArr = new int[] { 89, 19, 40, 17, 12, 10, 2, 5, 7, 11, 6, 9, 70 };
+>>>>>>> 162459ac67b75c5b78fcab2302031ba86090cc50
 
 		System.out.println(Arrays.toString(intArr) + " IS HEAP? :" + isHeapBT(intArr) + " ArraySIZE: " + intArr.length
 				+ " HeapSize? " + getHeapSize(intArr));
