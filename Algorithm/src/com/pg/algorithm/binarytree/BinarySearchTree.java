@@ -1,7 +1,5 @@
 package com.pg.algorithm.binarytree;
 
-import java.util.Iterator;
-
 public class BinarySearchTree {
 
 	/**
