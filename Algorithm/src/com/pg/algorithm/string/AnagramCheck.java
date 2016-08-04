@@ -9,7 +9,7 @@ public class AnagramCheck {
 	 */
 	public static void main(String[] args) {
 
-		System.out.println("isAnagram ? " + isAnagram("tea", "ate"));
+		System.out.println("isAnagram ? " + isAnagram("tea", "atc"));
 
 	}
 
