@@ -17,6 +17,7 @@ public class RegExTest {
 	private static boolean isNumber(String strInput){
 		if("" == strInput)return false;
 		
+		//decimal only
 		return strInput.matches("^\\d+$");
 	}
 	
