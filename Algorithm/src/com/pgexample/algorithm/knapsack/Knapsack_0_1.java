@@ -1,3 +1,5 @@
+package com.pgexample.algorithm.knapsack;
+
 import java.util.ArrayList;
 
 public class Knapsack_0_1 {
