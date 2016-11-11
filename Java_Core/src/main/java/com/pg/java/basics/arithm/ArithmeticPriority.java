@@ -14,6 +14,22 @@ public class ArithmeticPriority {
 		
 		System.out.println(z);
 		
+		square(10,3);
+		
+	}
+	
+	private static int square(int num, int toSqr){
+		int square = 0;
+		
+		if(num == 0){
+			return square;
+		}
+		
+		square = (int)Math.pow(num,toSqr);
+		
+		System.out.println(num + " to the power of "+toSqr+ " = "+square);
+		
+		return square;
 	}
 
 	private static void incrementModular() {
