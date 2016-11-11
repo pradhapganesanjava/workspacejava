@@ -1,4 +1,4 @@
-package com.pg.java.basics.arithm;
+package com.pg.java.bitwise;
 
 public class BitShiftOperator {
 
