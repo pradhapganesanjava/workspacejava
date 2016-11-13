@@ -1,4 +1,4 @@
-package com.pg.java.basics.wrapper;
+package com.pg.java.wrapper;
 
 public class IntegerTest {
 

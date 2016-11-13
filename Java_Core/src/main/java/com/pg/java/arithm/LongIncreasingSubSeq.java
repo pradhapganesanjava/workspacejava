@@ -1,4 +1,4 @@
-package com.pg.java.algorithm.luhn;
+package com.pg.java.arithm;
 
 public class LongIncreasingSubSeq {
 

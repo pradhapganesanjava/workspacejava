@@ -1,4 +1,4 @@
-package com.pg.java.basics.casting;
+package com.pg.java.casting;
 
 import java.util.ArrayList;
 import java.util.Arrays;

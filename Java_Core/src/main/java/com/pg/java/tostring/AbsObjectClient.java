@@ -1,4 +1,4 @@
-package com.pg.java.understand.tostring;
+package com.pg.java.tostring;
 
 public class AbsObjectClient {
 

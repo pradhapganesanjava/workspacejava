@@ -1,4 +1,4 @@
-package com.pg.java.understand.tostring;
+package com.pg.java.tostring;
 
 public interface AbsObject {
 	public String toMyString();
