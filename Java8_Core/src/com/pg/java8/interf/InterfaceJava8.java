@@ -1,10 +1,20 @@
 package com.pg.java8.interf;
 
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Inherited;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
 public class InterfaceJava8 {
 
 	public static void main(String...strings){
 		System.out.println( ""+new Cat().toString());
 		System.out.println( ""+new Dinosaur().toString());
+		
+		OneplusOne op = new OneplusOne();
+		System.out.println(" " + op.getClass().getAnnotation(OneplusPhone.class).model());
+		
 	}
 }
 
@@ -70,5 +80,20 @@ class Dinosaur implements Animal{
 	
 	public String toString(){
 		return Animal.comment()+"EatHabit: "+this.eatHabit()+" isWild: "+this.isWild()+" LiveIn: "+this.livesIn();
+	}
+}
+
+@Inherited
+@Target(ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+@interface OneplusPhone{
+	String model();
+	String thumbReader();
+}
+
+@OneplusPhone(model = "OneplusOne", thumbReader = "NO")
+class OneplusOne{
+	String model(){
+		return "One+1";
 	}
 }

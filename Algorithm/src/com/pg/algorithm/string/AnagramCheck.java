@@ -9,7 +9,7 @@ public class AnagramCheck {
 	 */
 	public static void main(String[] args) {
 
-		System.out.println("isAnagram ? " + isAnagram("tea", "atc"));
+		System.out.println("isAnagram ? " + isAnagram("treat", "tater"));
 
 	}
 
@@ -32,15 +32,24 @@ class AnagramComparable implements Comparator {
 	@Override
 	public int compare(Object o1, Object o2) {
 		String str1 = o1.toString();
-		String str2 = o1.toString();
+		String str2 = o2.toString();
+		
+		int compare = 0;
 		
 		char[] charArr1 = str1.toCharArray();
 		for(int i=0;i<charArr1.length;i++){
-			if(charIntArr[charArr1[i]] == '\u0000'){
-				charIntArr[charArr1[i]]++;
-			}
-		}
+			charIntArr[charArr1[i]]++;}
 		
-		return 0;
+		char[] charArr2 = str2.toCharArray();
+		for(int i=0;i<charArr2.length;i++){
+			int tmpVal = --charIntArr[charArr2[i]];
+			if(tmpVal < 0){
+				compare = -1;	break;}}
+		
+		for(int i=0;i<charIntArr.length;i++){
+			if(charIntArr[i]!=0){
+				compare = -1;	break;}}
+		
+		return compare;
 	}
 }
