@@ -22,27 +22,24 @@ public class QuickSort {
 
 	private static void QUICK_SORT(int[] intArr, int sIndex, int eIndex) {
 		if (sIndex < eIndex) {
-			int g = PARTITION(intArr, sIndex, eIndex);
-			QUICK_SORT(intArr, sIndex, g - 1);
-			QUICK_SORT(intArr, g + 1, eIndex);
+			int pivotIndex = PARTITION(intArr, sIndex, eIndex);
+			QUICK_SORT(intArr, sIndex, pivotIndex - 1);
+			QUICK_SORT(intArr, pivotIndex + 1, eIndex);
 		}
 	}
 
-	private static int PARTITION(int[] intArr, int sIndex, int eIndex) {
-		// int eIndex = intArr.length-1;
-		// int sIndex = 0;
-		int lastItem = intArr[eIndex];
+	private static int PARTITION(int[] intArr, int low, int high) {
+		int pivot = intArr[high];
 
-		for (int j = sIndex; j <= eIndex - 1; j++) {
-			if (intArr[j] <= lastItem) {
-				swap(intArr, sIndex, j);
-				sIndex++;
+		for (int count = low; count <= high - 1; count++) {
+			if (intArr[count] <= pivot) {
+				swap(intArr, low, count);
+				low++;
 			}
 		}
-		swap(intArr, sIndex, eIndex);
-
+		swap(intArr, low, high);
 		System.out.println(" " + Arrays.toString(intArr));
-		return sIndex;
+		return low;
 	}
 
 	private static void swap(int[] intArr, int left, int right) {
