@@ -16,7 +16,7 @@ public class RegExMatchString {
 	 */
 	public static void main(String[] args) {
 
-		str = "HIIII, How are you? Happy to see you! I am fine. Thanks.";
+		str = "HIIII, How are you? Happy to see you! I am fine.     Thanks.";
  String str2 = "this is a test23,54,390.";
 		//RegExMatchString.Tokens token = new RegExMatchString.Tokens();
 
@@ -26,6 +26,8 @@ public class RegExMatchString {
 		System.out.println("3 [a-z ]+|[0-9]+ " + Arrays.toString(getTokens("[a-z ]+|[0-9]+",str2).toArray()));
 		System.out.println("4 [a-z0-9 ]+ :" + Arrays.toString(getTokens("[a-z0-9 ]+",str2).toArray()));
 		System.out.println("5 [a-z0-9 ]+ :" + Arrays.toString(getTokens("[^.,?;:\"\' ]+",str).toArray()));
+		
+		System.out.println("aabbccc " + Arrays.toString(getTokens("[^a]+","aabbccc").toArray()));
 		
 		inlineBasicRegEx();
 	}

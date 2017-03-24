@@ -35,8 +35,8 @@ public class BitwiseOperatorsHello {
 		//left shift equivalent to multiply of 2
 		int signedLeftShiftOperator = (na<<2); 
 		
-		//add num of 0s to right and hense rest of bits moves to left.
-		//left shift equivalent to divide of 2
+		//add num of 0s to left and hense rest of bits moves to right.
+		//right shift equivalent to divide of 2
 		int signedRightShiftOperator = (na>>2); 
 
 		

@@ -8,6 +8,8 @@ public class MiscTest {
 	public static void main(String[] args) {
 		squareRoot();
 
+		System.out.println(" compareTo " + "abc".compareTo("__a"));
+		
 		List lst = Arrays.asList(new String[] { "a", "b", "c" });
 		System.out.println(" contains " + lst.contains("a"));
 

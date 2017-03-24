@@ -4,8 +4,8 @@ public class LongCommonSubseq {
 
 	public static void main(String[] args) {
 
-		String lcsStr1 = "propagation propag propaganda propagate";
-		String lcsStr2 = "propaga";
+		String lcsStr1 = "cat";
+		String lcsStr2 = "cut";
 		char[] lcsStr2Chars = lcsStr2.toCharArray();
 
 		int lcsIndex = -1;
