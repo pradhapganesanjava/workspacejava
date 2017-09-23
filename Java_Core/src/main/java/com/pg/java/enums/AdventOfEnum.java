@@ -1,11 +1,6 @@
 package com.pg.java.enums;
 
 public class AdventOfEnum {
-
-}
-
-
-class ReqStatus {
 	 
     public enum Status{
         STATUS_OPEN,
@@ -15,11 +10,16 @@ class ReqStatus {
     }
  
     public static void main(String[] args){
+    	Status dupButSame = Status.valueOf("STATUS_OPEN");
+    	System.out.println("dupButSame == Status.STATUS_OPEN ? "+ (dupButSame == Status.STATUS_OPEN));
         for (Status stat: Status.values()){
             System.out.println(stat);
         }
     }
 }
+
+
+class ReqStatus {}
 
 class RequestStatus {
 	 

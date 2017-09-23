@@ -31,6 +31,12 @@ public class QuickSort {
 	private static int PARTITION(int[] intArr, int low, int high) {
 		int pivot = intArr[high];
 
+		/*
+			int randI = Math.random();   // a random number between 0 and 1
+		    pivot = low + Math.floor( (high - low + 1) * randI);  
+		    swap(intArr[low], intArr[pivot]);
+		 */
+		
 		for (int count = low; count <= high - 1; count++) {
 			if (intArr[count] <= pivot) {
 				swap(intArr, low, count);

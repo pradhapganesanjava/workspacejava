@@ -9,6 +9,17 @@ public class ConstructorMethodRef {
 
 		PersonFactory<Person> personFactory = Person::new;
 		Person person = personFactory.createPerson("Ganesan", 10, "constructor");
+		
+		//Old way to New
+		Person pers = new Person("", 11,"");
+		PersonFactory<Person> newPersFact = new PersonFactory() {
+			@Override
+			public Person createPerson(String name, int age, String address){ //method params are use for Lamda      -- (name, age, address) ->
+				return new Person(name,age,address);						  //method body use for Lamda expression  -- new Person(name, age, address)
+			}
+		};
+		//===============>
+		PersonFactory<Person> personFact = (name, age, address) -> new Person(name, age, address);
 	}
 
 }

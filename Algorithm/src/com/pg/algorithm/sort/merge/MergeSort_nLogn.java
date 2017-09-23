@@ -10,8 +10,9 @@ public class MergeSort_nLogn {
 	public static void main(String[] args) {
 
 		int[] intArray = { 0,2,2,2,6,0};
-
+		System.out.println("input arr : "+Arrays.toString(intArray));
 		mergeSort(intArray);
+		System.out.println("output arr : "+Arrays.toString(intArray));
 
 	}
 
