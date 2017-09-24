@@ -35,8 +35,8 @@ public class BitwiseOperatorsHello {
 		//left shift equivalent to multiply of 2
 		int signedLeftShiftOperator = (na<<2); 
 		
-		//add num of 0s to right and hense rest of bits moves to left.
-		//left shift equivalent to divide of 2
+		//add num of 0s to left and hense rest of bits moves to right.
+		//right shift equivalent to divide of 2
 		int signedRightShiftOperator = (na>>2); 
 
 		
@@ -77,6 +77,19 @@ public class BitwiseOperatorsHello {
 			//System.out.println("(7|"+i+")"+(7|i));
 		}
 		
+		andOperatorTest();
 	}
 
+	/**
+	 *  // Modulus
+	 *  i % 4; // normal
+	 *  i & 3; // bitwise [4 = 1 << 2, apply ((1 << 2) - 1), so use 3]
+	 */
+	private static void andOperatorTest(){
+		System.out.println("10 & 2 : "+(10 & 2)+"\t"+"10 % 2 : "+(10 % 4));
+		System.out.println("5 & 5 : "+(5 & 5)+"\t"+"5 % 5 : "+(5 % 32));
+		System.out.println("5 & 6 : "+(5 & 6)+"\t"+"5 % 6 : "+(5 % 64));
+		System.out.println("13 & 15 : "+(13 & 15)+"\t"+"13 % 15: "+(13 % Math.pow(2, 15)));
+	}
+	
 }

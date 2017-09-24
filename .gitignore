@@ -15,8 +15,8 @@ bin/
 .metadata/
 .recommenders/
 RemoteSystemsTempFiles/
-.classpath
-.project
+#.classpath
+#.project
 
 #go figure...
 /.z

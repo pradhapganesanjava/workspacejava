@@ -15,6 +15,8 @@ public class StringFormat {
 	 */
 	public static void main(String[] args) {
 
+		System.out.println(String.format("Mr. %s is earning monthly %1.1f", "Pradhap", 1000.0));
+		
 
 		/**
 		 * String.format "%[argument number] [flags] [width] [.precision] type

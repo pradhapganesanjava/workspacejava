@@ -3,7 +3,7 @@ package com.pg.algorithm;
 public class Palindrome {
 
 	public static void main(String[] args) {
-		String givenStr = "daad";
+		String givenStr = "pp";
 		System.out.println("Given Str: " + givenStr + " isPalindrome? " + isPalindrome(givenStr));
 
 	}

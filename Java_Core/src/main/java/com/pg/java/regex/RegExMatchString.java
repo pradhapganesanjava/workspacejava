@@ -16,35 +16,38 @@ public class RegExMatchString {
 	 */
 	public static void main(String[] args) {
 
-		str = "HIIII, HI HOW OLD ARE YOU?; hi how old are you?.   I Am in 30s.";
+		str = "HIIII, How are you? Happy to see you! I am fine.     Thanks.";
  String str2 = "this is a test23,54,390.";
 		//RegExMatchString.Tokens token = new RegExMatchString.Tokens();
 
-		//System.out.println(" " + Arrays.toString(token.getTokens(",").toArray()));
-		System.out.println(" " + Arrays.toString(getTokens("[^.?]+",str).toArray()));
-		System.out.println(" " + Arrays.toString(getTokens("[^.,]+",str2).toArray()));
-		System.out.println("[a-z ]+|[0-9]+ " + Arrays.toString(getTokens("[a-z ]+|[0-9]+",str2).toArray()));
-		System.out.println("[a-z0-9 ]+ :" + Arrays.toString(getTokens("[a-z0-9 ]+",str2).toArray()));
-		System.out.println("[a-z0-9 ]+ :" + Arrays.toString(getTokens("[^.,?;:\"\' ]+",str).toArray()));
+		System.out.println("0 " + Arrays.toString(getTokens("[^ ]+",str).toArray()));
+		System.out.println("1 " + Arrays.toString(getTokens("[^.!?]+",str).toArray()));
+		System.out.println("2 " + Arrays.toString(getTokens("[^.,]+",str2).toArray()));
+		System.out.println("3 [a-z ]+|[0-9]+ " + Arrays.toString(getTokens("[a-z ]+|[0-9]+",str2).toArray()));
+		System.out.println("4 [a-z0-9 ]+ :" + Arrays.toString(getTokens("[a-z0-9 ]+",str2).toArray()));
+		System.out.println("5 [a-z0-9 ]+ :" + Arrays.toString(getTokens("[^.,?;:\"\' ]+",str).toArray()));
 		
-		//inlineBasicRegEx();
+		System.out.println("aabbccc " + Arrays.toString(getTokens("[^a]+","aabbccc").toArray()));
+		
+		inlineBasicRegEx();
 	}
 
 	private static void inlineBasicRegEx() {
-		System.out.println(" " + Arrays.toString(str.split(" +")));
-		System.out.println(" " + Arrays.toString(str.split("HI*|hi")));
-		System.out.println(" " + Arrays.toString(str.split("H|h")));
-		System.out.println(" " + Arrays.toString(str.split("[Hh]")));
+		System.out.println("6 " + Arrays.toString(str.split("[.!\\?]+")));
+		System.out.println("7 " + Arrays.toString(str.split("HI*|hi")));
+		System.out.println("8 " + Arrays.toString(str.split("H|h")));
+		System.out.println("9 " + Arrays.toString(str.split("[Hh]")));
 
-		System.out.println(" " + Arrays.toString("1 2 33".split("[1-3]*")));
-		System.out.println(" " + Arrays.toString("1 2 33".split("1|2|33")));
-		System.out.println(" " + Arrays.toString("1 2 33".split("[0-9]+")));
+		System.out.println("a " + Arrays.toString("1 2 33".split("[1-3]*")));
+		System.out.println("b " + Arrays.toString("1 2 33".split("1|2|33")));
+		System.out.println("c " + Arrays.toString("1 2 33".split("[0-9]+")));
 
-		System.out.println(" " + Arrays.toString(str.split("[a-zA-Z]+")));
+		System.out.println("d " + Arrays.toString(str.split("[a-zA-Z]+")));
 
-		System.out.println(" " + Arrays.toString(str.split("[^.?]+")));
+		System.out.println("e " + Arrays.toString(str.split("[^.?]+")));
 
 		System.out.println(Arrays.toString("this is a test.23 ,54 ,390.".split("[a-z0-9 ]+")));
+		
 	}
 
 	static List<String> getTokens(String pattern, String doc)
