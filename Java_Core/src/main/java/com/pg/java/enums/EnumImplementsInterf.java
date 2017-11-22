@@ -5,10 +5,10 @@ public class EnumImplementsInterf {
 }
 
 
-enum Currency implements Runnable {
+enum Currency2 implements Runnable {
 	PENNY(1), NICKLE(5), DIME(10), QUARTER(25);
 	private int value;
-	private Currency(int val) {
+	private Currency2(int val) {
 		this.value = val;	}
 
 	@Override

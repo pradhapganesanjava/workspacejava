@@ -3,7 +3,19 @@ package com.pg.algorithm.unionfind;
 import java.util.Arrays;
 
 /*
+ * QuickFind alg helps to check if there is path between two nodes. 
+ * 
+ * Ex: Pixels in a image; social network; computer network; Transistors in a computer chip.
+ * 
+ * > check if two nodes(vertices) are connected (may be in-directly)
+ * > if not connected, connect
+ * 
  * Quadratic way of doing QuickFind algorithm, is 10times slower. Big O is N^2.
+ * 
+ * > Vertices should be unique
+ * > Decimal, Negative numbers can not be used for this
+ * > 
+ * > 
  *   
  */
 public class QuickFind {
