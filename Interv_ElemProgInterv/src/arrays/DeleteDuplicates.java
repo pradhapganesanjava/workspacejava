@@ -1,3 +1,4 @@
+package arrays;
 import java.util.List;
 
 public class DeleteDuplicates {
