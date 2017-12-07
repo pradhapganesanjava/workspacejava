@@ -2,7 +2,7 @@ package com.pg.java8.pattern.singleton;
 
 import java.util.function.Supplier;
 
-public class LoggerSingleton {
+public class LoggerSingleton {/*
 	static final LoggerSingleton logIns = null; 
 	private LoggerSingleton(){
 		
@@ -17,5 +17,5 @@ public class LoggerSingleton {
 		private OneSingleton(){
 		}
 	}
-}
+*/}
 
