@@ -23,13 +23,26 @@ import java.util.Arrays;
  */
 import java.util.List;
 
+/***
+^(?:(?!test).)*$
+	^               the beginning of the string
+	(?:             group, but do not capture (0 or more times)
+	 (?!            look ahead to see if there is not:
+	  test          'test'
+	 )              end of look-ahead
+	 .              any character except \n
+	)*              end of grouping
+	$               before an optional \n, and the end of the string
+
+ */
 public class RegExBasics extends AbstractRegEx {
 
 	public static void main(String[] args) {
 		RegExBasics regExObj = new RegExBasics();
-		regExObj.matchText();
+		// regExObj.matchText();
 		
-		alternationTest();
+		// alternationTest();
+		notExceptTest();
 	}
 
 	/* Alternation:
@@ -46,6 +59,13 @@ public class RegExBasics extends AbstractRegEx {
 		alt_setOf_OR(orTestTxt,"[()-]");
 		//range of OR conditions; elegant and avoid many individual chars
 		alt_rangeOf_OR(orTestTxt,"[A-G]");
+	}
+	
+	private static void notExceptTest(){
+		
+		String str1 = "/api/signidd";
+		System.out.println( str1.matches("^/api/(?!signin|signout).*$"));
+		
 	}
 	
 	
