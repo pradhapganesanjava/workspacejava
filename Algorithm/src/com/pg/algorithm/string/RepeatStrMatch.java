@@ -114,6 +114,4 @@ public class RepeatStrMatch {
         return -1;
     }
 }
-	
-}
 
