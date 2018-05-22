@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ROWS>
+	<ROW>
+		<ActType>AAAA</ActType>
+		<ActId>11111</ActId>
+	</ROW>
+	<ROW>
+		<ActType>BBBB</ActType>
+		<ActId>2222</ActId>
+	</ROW>
+	<ROW>
+		<ActType>CCCC</ActType>
+		<ActId>3333</ActId>
+	</ROW>
+	<ROW>
+		<ActType>DDDD</ActType>
+		<ActId>4444</ActId>
+	</ROW>
+	<ROW>
+		<ActType>EEEE</ActType>
+		<ActId>5555</ActId>
+	</ROW>
+</ROWS>

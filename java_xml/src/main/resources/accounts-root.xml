@@ -1,0 +1,17 @@
+<Accounts>
+    <Account>
+        <ActType>13706</ActType>
+        <ActOwnerCd>13706</ActOwnerCd>
+        <ActId>111111</ActId>
+    </Account>
+    <Account>
+        <ActType>222222</ActType>
+        <ActOwnerCd>222222</ActOwnerCd>
+        <ActId>222222</ActId>
+    </Account>
+    <Account>
+        <ActType>33333</ActType>
+        <ActOwnerCd>33</ActOwnerCd>
+        <ActId>333333</ActId>
+    </Account>
+</Accounts>

@@ -7,6 +7,12 @@ public class ReduceTest {
 
 	public static void main(String[] args) {
 
+		//Reduce by Combine/Accumulate
+		List<String> strLst = Arrays.asList(new String[]{"PG", "GP", "APR"});
+		strLst.stream().reduce((i, a) -> i + a).ifPresent(s -> System.out.println(s));
+		
+		
+		
 		List<Person> lstPerson = Arrays.asList(new Person("Arun", 33, "M")
 												, new Person("Maya", 18, "F")
 												,new Person("Arti", 25, "F")

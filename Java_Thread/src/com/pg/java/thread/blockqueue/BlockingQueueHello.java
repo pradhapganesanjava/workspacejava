@@ -11,7 +11,7 @@ public class BlockingQueueHello {
 	 */
 	public static void main(String[] args) {
 
-		BlockingQueue<String> bQueue = new ArrayBlockingQueue<String>(10);
+		BlockingQueue<String> bQueue = new ArrayBlockingQueue<String>(500);
 
 		Thread t1 = new Thread(new ProducerRun(bQueue));
 		Thread t2 = new Thread(new ConsumerRun(bQueue));
