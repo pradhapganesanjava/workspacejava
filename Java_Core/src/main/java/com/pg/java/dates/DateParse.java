@@ -7,7 +7,17 @@ import java.util.Date;
 
 public class DateParse {
 
-	public static void main(String...strings){
+	public static void main(String...strings) throws ParseException{
+
+		System.out.println(convertDate("02/04/2018", "MM/dd/YYYY"));
+		System.out.println(convertDate("02/04/2018", "MM/dd/yyyy"));		
+		System.out.println(convertDate("02/04/2018", "mm/dd/YYYY"));
+		System.out.println(convertDate("02/04/2018", "mm/dd/yyyy"));
+		
+		//timestampConvert();
+	}
+
+	private static void timestampConvert() {
 		try{
 			//Date dt = new SimpleDateFormat("MM/dd/yyyy").parse("01/01/2999");
 			
@@ -20,4 +30,20 @@ public class DateParse {
 		}
 	}
 	
+	public static Date convertDate(String strdate, String pattern) throws ParseException {
+		if (null == strdate)
+			return null;
+		if ("" == pattern || null == pattern)
+			pattern = "yyyymmdd";
+
+		Date date = null;
+		SimpleDateFormat format = new SimpleDateFormat(pattern);
+
+		try {
+			date = format.parse(strdate);
+		} catch (ParseException e) {
+			throw e;
+		}
+		return date;
+	}
 }
