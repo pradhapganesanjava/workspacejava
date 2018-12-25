@@ -1,4 +1,4 @@
-package com.pg.ds.binarytree;
+package com.pg.ds.tree.binary.bst;
 
 import java.util.LinkedList;
 import java.util.Queue;

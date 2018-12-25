@@ -1,4 +1,4 @@
-package com.pg.algorithm.array2d.num_of_lonely;
+package com.pg.algorithm.matrix.string.numoflonely;
 
 public class NumOfLonely {
 	

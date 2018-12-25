@@ -1,4 +1,4 @@
-package com.pg.algorithm.matrix;
+package com.pg.algorithm.matrix.integer;
 
 public class PerfectRectangle {
 

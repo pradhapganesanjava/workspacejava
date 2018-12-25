@@ -18,20 +18,19 @@ public class StockBuySellHighGain {
 	
 	public static void main(String...str){
 		
-		System.out.println();
-		
-		System.out.println("[10] : " + findBestDiffStock(new int[]{10}));		
+		/*System.out.println("[10] : " + findBestDiffStock(new int[]{10}));		
 		System.out.println("[10,11] : " + findBestDiffStock(new int[]{10,11}));
 		System.out.println("[10,9] : " + findBestDiffStock(new int[]{10,9}));
 		System.out.println("[10,5,6,7,16,8,15] : " + findBestDiffStock(new int[]{10,5,6,7,16,8,15}));
 		System.out.println("[1, 2, 3, 4, 5, 6, 7] : " + findBestDiffStock(new int[]{1, 2, 3, 4, 5, 6, 7}));
 		System.out.println("[91, 82, 73, 64, 55, 46, 37] : " + findBestDiffStock(new int[]{91, 82, 73, 64, 55, 46, 37}));
 		System.out.println("[2, 3, 10, 6, 4, 8, 1] : " + findBestDiffStock(new int[]{ 2, 3, 10, 6, 4, 8, 1}));
-		System.out.println("[7, 9, 5, 6, 3, 2] : " + findBestDiffStock(new int[]{7, 9, 5, 6, 3, 2}));
+		System.out.println("[7, 9, 5, 6, 3, 2] : " + findBestDiffStock(new int[]{7, 9, 5, 6, 3, 2}));*/
+		System.out.println("[100, 80, 120, 130, 70, 60, 100, 125] : " + findBestDiffStock(new int[]{100, 80, 120, 130, 70, 60, 100, 125}));
 	}
 
 
-	private static int findBestDiffStock(int[] stk) {
+	private static int findBestDiffStock2(int[] stk) {
 		if (stk == null || stk.length == 0)
 			return 0;
 		if (stk.length < 2)
@@ -63,5 +62,21 @@ public class StockBuySellHighGain {
 		}
 		return mp;
 	}
-	
+
+	public static int findBestDiffStock(int[] stockPrices)
+    {
+        int profit = 0;
+        int minimumPrice = Integer.MAX_VALUE;
+        /* 
+         * for any given day, maximum profit obtainable is - 
+         * maximum of(maximum profit obtained till previous day, stock price on that day - minimum stock price so far)
+         */
+        for(int i = 0; i < stockPrices.length; i++)
+        {
+            profit = Math.max(profit, stockPrices[i] - minimumPrice);
+            minimumPrice = Math.min(stockPrices[i], minimumPrice);
+        }
+         
+        return profit;
+    }
 }

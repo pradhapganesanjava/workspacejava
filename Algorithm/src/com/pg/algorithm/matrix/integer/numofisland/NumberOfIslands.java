@@ -1,4 +1,4 @@
-package com.pg.algorithm.array2d.numofisland;
+package com.pg.algorithm.matrix.integer.numofisland;
 
 public class NumberOfIslands {
 	final static int[] offsets = { -1, 0, +1 };

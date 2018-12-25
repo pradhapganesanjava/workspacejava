@@ -1,4 +1,4 @@
-package com.pg.algorithm.matrix;
+package com.pg.algorithm.matrix.integer;
 
 public class MaxsizeOfSquare {
 
@@ -35,7 +35,10 @@ public class MaxsizeOfSquare {
                 { 0, 1, 1, 1, 1, 1 },
                 { 1, 0, 0, 0, 1, 1 }
               };
+		int[][] iarr5 = new int[][]{ {1,0,1,1}
+		,{1,1,1,1} };
 		System.out.println(maxsizeSquareMatrix(matrix));
+		System.out.println(maxsizeSquareMatrix(iarr5));
 	}
 
 }
