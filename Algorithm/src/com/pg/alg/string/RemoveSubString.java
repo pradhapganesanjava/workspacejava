@@ -1,4 +1,4 @@
-package com.pg.algorithm.string;
+package com.pg.alg.string;
 
 import java.util.Arrays;
 import java.util.Iterator;
@@ -9,11 +9,11 @@ import java.util.Stack;
  You are supposed to remove every instance of those n substrings from S 
  so that S is of the minimum length and output this minimum length.
  Eg:
- S­ ccdaabcdbb
- n=2 ­ substrings­­ ab, cd
+ Sï¿½ ccdaabcdbb
+ n=2 ï¿½ substringsï¿½ï¿½ ab, cd
  Output: 2
  Explanation:
- ccdaabcdbb ­> ccdacdbb ­> cabb ­> cb (length=2)
+ ccdaabcdbb ï¿½> ccdacdbb ï¿½> cabb ï¿½> cb (length=2)
  * 
  */
 public class RemoveSubString {

@@ -1,4 +1,4 @@
-package com.pg.algorithm.string;
+package com.pg.alg.string;
 
 public class EditDistance {
 	static int min(int x, int y, int z) {

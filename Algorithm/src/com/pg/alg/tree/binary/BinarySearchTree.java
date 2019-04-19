@@ -1,4 +1,4 @@
-package com.pg.algorithm.binarytree;
+package com.pg.alg.tree.binary;
 
 public class BinarySearchTree {
 

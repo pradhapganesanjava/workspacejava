@@ -1,4 +1,4 @@
-package com.pg.algorithm.bitwise;
+package com.pg.alg.bitwise;
 
 import java.util.Arrays;
 import java.util.List;

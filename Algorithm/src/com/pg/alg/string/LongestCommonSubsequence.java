@@ -1,4 +1,4 @@
-package com.pg.algorithm.string;
+package com.pg.alg.string;
 
 public class LongestCommonSubsequence {
 	public static void commonSubsequence(String S1, String S2) {

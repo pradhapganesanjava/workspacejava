@@ -1,4 +1,4 @@
-package com.pg.algorithm.string;
+package com.pg.alg.string;
 
 import java.util.Iterator;
 import java.util.Stack;
