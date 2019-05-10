@@ -1,5 +1,11 @@
 package com.pg.algorithm.array.string;
 
+/***
+ * permutation is a rearrangement of letters 
+ * 
+ * @author pradhapganesan
+ *
+ */
 public class PermutationOfString {
 	static StringBuilder strBuild = new StringBuilder();
 	static String inStr = "abcd";
@@ -25,4 +31,5 @@ public class PermutationOfString {
 			strBuild.setLength(strBuild.length()-1);
 		}
 	}
+	
 }

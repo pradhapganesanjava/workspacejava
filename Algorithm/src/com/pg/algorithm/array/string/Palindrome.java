@@ -1,4 +1,4 @@
-package com.pg.algorithm;
+package com.pg.algorithm.array.string;
 
 public class Palindrome {
 

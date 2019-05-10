@@ -83,7 +83,8 @@ public class QuestionB {
 	
 	public static void main(String[] args) {
 		/* Simple test -- create one */
-		int[] array = {Integer.MIN_VALUE, 3, 5, 6, 10, 13, 15, Integer.MAX_VALUE};
+		//int[] array = {Integer.MIN_VALUE, 3, 5, 6, 10, 13, 15, Integer.MAX_VALUE};
+		int[] array = {Integer.MIN_VALUE, 1, 2, 3, 4, 4, 4 , 6, 7, 7, 8, Integer.MAX_VALUE};
 		TreeNode node = TreeNode.createMinimalBST(array);
 		//node.left.data = 6; // "ruin" the BST property by changing one of the elements
 		node.print();

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Question {	
+	static int run = 0;
 	public static HashMap<Character, Integer> buildFreqTable(String s) {
 		HashMap<Character, Integer> map = new HashMap<Character, Integer>();
 		for (char c : s.toCharArray()) {
@@ -22,6 +23,7 @@ public class Question {
 		}
 		
 		for (Character c : map.keySet()) {
+			run++;
 			int count = map.get(c);
 			if (count > 0) {
 				map.put(c,  count - 1);
@@ -39,9 +41,9 @@ public class Question {
 	}
 	
 	public static void main(String[] args) {
-		String s = "aabbccc";
+		String s = "aaa"; //"aabbccc";
 		ArrayList<String> result = printPerms(s);
-		System.out.println("Count: " + result.size());
+		System.out.println("Count: " + result.size() + "run: "+ run);
 		for (String r : result) {
 			System.out.println(r);
 		}
