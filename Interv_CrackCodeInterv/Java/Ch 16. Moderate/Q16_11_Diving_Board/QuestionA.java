@@ -22,7 +22,7 @@ public class QuestionA {
 	}
 
 	public static void main(String[] args) {
-		HashSet<Integer> lengths = allLengths(12, 1, 3);
+		HashSet<Integer> lengths = allLengths(12, 1, 3); //allLengths(15, 5, 10);//allLengths(12, 1, 3);
 		System.out.println(lengths.toString());
 		System.out.println(counter);
 	}

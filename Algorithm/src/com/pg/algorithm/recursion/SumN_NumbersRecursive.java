@@ -7,9 +7,6 @@ public class SumN_NumbersRecursive {
 	}
 	private static int sumRecur(int n) {
 		if(n == 0) return 0;
-		//if(n == 1) return 1;
-		//int sum = 1;
-		return sumRecur(n-1)+n;
-		//return sum;
+		return n + sumRecur(n-1);
 	}
 }

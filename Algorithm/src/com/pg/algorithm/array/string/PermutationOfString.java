@@ -8,8 +8,9 @@ package com.pg.algorithm.array.string;
  */
 public class PermutationOfString {
 	static StringBuilder strBuild = new StringBuilder();
-	static String inStr = "abcd";
+	static String inStr = "1234567890";
 	static int pCount = 0;
+	static int k = 3;
 	public static void main(String[] args) {
 		
 		permutation();
@@ -17,7 +18,7 @@ public class PermutationOfString {
 	}
 	
 	private static void permutation(){
-		if(strBuild.length() == inStr.length()){
+		if(strBuild.length() == k){
 			System.out.println(strBuild.toString());
 			pCount++;
 			return;
