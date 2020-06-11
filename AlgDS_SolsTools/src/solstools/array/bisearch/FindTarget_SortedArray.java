@@ -12,7 +12,7 @@ You may assume no duplicates in the array.
 
 Input: [1,1,1,1], -5	 Output: 0
 
-Input: [1,1,1,1], 3 Output: 4
+Input: [1,1,1,1], 3	Output: 4
 
 Input: [1,3,5,6], 5	Output: 2
 
