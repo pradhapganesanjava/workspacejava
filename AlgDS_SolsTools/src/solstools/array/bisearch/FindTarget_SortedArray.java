@@ -10,6 +10,10 @@ Given a sorted array and a target value, return the index if the target is found
 If not, return the index where it would be if it were inserted in order.
 You may assume no duplicates in the array.
 
+Input: [1,1,1,1], -5	 Output: 0
+
+Input: [1,1,1,1], 3 Output: 4
+
 Input: [1,3,5,6], 5	Output: 2
 
 Input: [1,3,5,6], 2 	Output: 1
@@ -24,10 +28,20 @@ public class FindTarget_SortedArray {
 	static FindTarget_SortedArray_Solution sol;
 
 	public static void main(String[] args) {
-		int[] nums = new int[] { 2, 3, 3, 3, 3 };
-		int tgt = 4;
-		int idx = sol.searchInsert(nums, tgt);
-		System.out.format("arr: %s, tgt: %d, idx: %d \n", Arrays.toString(nums), tgt, idx);
+		int[][] nums2 = new int[][] {
+			{ 2, 4, 6, 8 },
+			{ 2, 4, 6, 8 },
+			{ 1, 1, 1, 1 },
+			{ 1, 1, 1, 1 }
+		};
+		int[] tgts = new int[] {1,5,-5,3};
+		
+		for(int i=0; i<nums2.length; i++) {
+			int[] nums = nums2[i];
+			int tgt = tgts[i];
+			int idx = sol.searchInsert(nums, tgt);
+			System.out.format("arr: %s, tgt: %d, idx: %d \n", Arrays.toString(nums), tgt, idx);
+		}
 	}
 
 }
