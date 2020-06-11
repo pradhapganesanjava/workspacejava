@@ -37,6 +37,8 @@ public class QuickSort {
 		    swap(intArr[low], intArr[pivot]);
 		 */
 		
+		System.out.format("st: %d, ed: %d, pv: %d IN-ARR: %s \n", low, high, pivot, Arrays.toString(intArr));
+		
 		for (int count = low; count <= high - 1; count++) {
 			if (intArr[count] <= pivot) {
 				swap(intArr, low, count);
@@ -44,7 +46,7 @@ public class QuickSort {
 			}
 		}
 		swap(intArr, low, high);
-		System.out.println(" " + Arrays.toString(intArr));
+		System.out.format("st: %d, ed: %d, pv: %d OUT-ARR: %s \n", low, high, low, Arrays.toString(intArr));
 		return low;
 	}
 

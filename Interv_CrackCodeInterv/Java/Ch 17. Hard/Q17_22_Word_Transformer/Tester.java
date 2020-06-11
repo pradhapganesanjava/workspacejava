@@ -17,6 +17,8 @@ public class Tester {
 		LinkedList<String> listA = QuestionA.transform("tree", "flat", words);
 		LinkedList<String> listB = QuestionB.transform("tree", "flat", words);
 		LinkedList<String> listC = QuestionC.transform("tree", "flat", words);
+		
+		listC = QuestionC.transform("help", "maps", words);
 		printList(listA);
 		printList(listB);
 		printList(listC);

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Algorithm/src"/>
+	<classpathentry kind="src" path="DataStructure/src"/>
+	<classpathentry kind="src" path="Interv_CrackCodeInterv/Java/Big O"/>
+	<classpathentry kind="src" path="Interv_CrackCodeInterv/Java/Ch 01. Arrays and Strings"/>
+	<classpathentry kind="src" path="Interv_CrackCodeInterv/Java/Ch 02. Linked Lists"/>
+	<classpathentry kind="src" path="Interv_CrackCodeInterv/Java/Ch 03. Stacks and Queues"/>
+	<classpathentry kind="src" path="Interv_CrackCodeInterv/Java/Ch 04. Trees and Graphs"/>
+	<classpathentry kind="src" path="Interv_CrackCodeInterv/Java/Ch 05. Bit Manipulation"/>
+	<classpathentry kind="src" path="Interv_CrackCodeInterv/Java/Ch 06. Math and Logic Puzzles"/>
+	<classpathentry kind="src" path="Interv_CrackCodeInterv/Java/Ch 07. Object-Oriented Design"/>
+	<classpathentry kind="src" path="Interv_CrackCodeInterv/Java/Ch 08. Recursion and Dynamic Programming"/>
+	<classpathentry kind="src" path="Interv_CrackCodeInterv/Java/Ch 09. Scalability and Memory Limits"/>
+	<classpathentry kind="src" path="Interv_CrackCodeInterv/Java/Ch 10. Sorting and Searching"/>
+	<classpathentry kind="src" path="Interv_CrackCodeInterv/Java/Ch 13. Java"/>
+	<classpathentry kind="src" path="Interv_CrackCodeInterv/Java/Ch 15. Threads and Locks"/>
+	<classpathentry kind="src" path="Interv_CrackCodeInterv/Java/Ch 16. Moderate"/>
+	<classpathentry kind="src" path="Interv_CrackCodeInterv/Java/Ch 17. Hard"/>
+	<classpathentry kind="src" path="Interv_CrackCodeInterv/Java/CtCILibrary"/>
+	<classpathentry kind="src" path="Interv_CrackCodeInterv/Java/Introduction"/>
+	<classpathentry kind="src" path="Interv_Design/src"/>
+	<classpathentry excluding="datastructures/|utils/|strings/|hashtables/|searching/|dynamicprogramming/|recursion/|greedyalgorithms/|parallelcomputing/|sorting/|stacksandqueues/|linkedlists/|heaps/|binarytrees/|graphs/|arrays/|primitives/|binarysearchtrees/" kind="src" path="Interv_ElemProgInterv/src"/>
+	<classpathentry kind="src" path="Interv_ElemProgInterv/src/arrays"/>
+	<classpathentry kind="src" path="Interv_ElemProgInterv/src/binarysearchtrees"/>
+	<classpathentry kind="src" path="Interv_ElemProgInterv/src/binarytrees"/>
+	<classpathentry kind="src" path="Interv_ElemProgInterv/src/datastructures"/>
+	<classpathentry kind="src" path="Interv_ElemProgInterv/src/dynamicprogramming"/>
+	<classpathentry kind="src" path="Interv_ElemProgInterv/src/graphs"/>
+	<classpathentry kind="src" path="Interv_ElemProgInterv/src/greedyalgorithms"/>
+	<classpathentry kind="src" path="Interv_ElemProgInterv/src/hashtables"/>
+	<classpathentry kind="src" path="Interv_ElemProgInterv/src/heaps"/>
+	<classpathentry kind="src" path="Interv_ElemProgInterv/src/linkedlists"/>
+	<classpathentry kind="src" path="Interv_ElemProgInterv/src/parallelcomputing"/>
+	<classpathentry kind="src" path="Interv_ElemProgInterv/src/primitives"/>
+	<classpathentry kind="src" path="Interv_ElemProgInterv/src/recursion"/>
+	<classpathentry kind="src" path="Interv_ElemProgInterv/src/searching"/>
+	<classpathentry kind="src" path="Interv_ElemProgInterv/src/sorting"/>
+	<classpathentry kind="src" path="Interv_ElemProgInterv/src/stacksandqueues"/>
+	<classpathentry kind="src" path="Interv_ElemProgInterv/src/strings"/>
+	<classpathentry kind="src" path="Interv_ElemProgInterv/src/utils"/>
+	<classpathentry kind="src" path="Interv_Leetcode/src"/>
+	<classpathentry kind="src" path="Java_Applet/src"/>
+	<classpathentry kind="src" path="Java_Collection/src"/>
+	<classpathentry kind="src" path="Java_Core/src/main/java"/>
+	<classpathentry kind="src" path="Java_Core/src/test/java/com/pg/java"/>
+	<classpathentry kind="src" path="Java_Core/src/tmp"/>
+	<classpathentry kind="src" path="Java_DesignPattern/src"/>
+	<classpathentry kind="src" path="java_file/src/main/java"/>
+	<classpathentry kind="src" path="Java_Socket/src"/>
+	<classpathentry kind="src" path="Java_Thread/src"/>
+	<classpathentry kind="src" path="java_xml/src/main/java"/>
+	<classpathentry kind="src" path="Java8_Core/src"/>
+	<classpathentry kind="lib" path="Algorithm/ext_lib/google-collections-1.0-rc5.jar"/>
+	<classpathentry kind="lib" path="Java_Applet/resource/core.jar"/>
+	<classpathentry kind="lib" path="Java_Core/lib/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="Java_DesignPattern/ext-lib/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="Java_DesignPattern/ext-lib/guice-3.0.jar"/>
+	<classpathentry kind="lib" path="Java_DesignPattern/ext-lib/hibernate-3.6.1.jar"/>
+	<classpathentry kind="lib" path="Java_DesignPattern/ext-lib/javax-inject.jar"/>
+	<classpathentry kind="lib" path="Java_DesignPattern/ext-lib/javax.persistence.jar"/>
+	<classpathentry kind="lib" path="Java_DesignPattern/ext-lib/org.springframework.beans_3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="Java_DesignPattern/ext-lib/org.springframework.context-3.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="Java_DesignPattern/ext-lib/org.springframework.core-3.0.3.RELEASE.jar"/>
+	<classpathentry kind="output" path="Algorithm/bin"/>
+</classpath>

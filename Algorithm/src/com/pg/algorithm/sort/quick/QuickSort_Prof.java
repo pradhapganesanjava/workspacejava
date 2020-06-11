@@ -1,6 +1,7 @@
 package com.pg.algorithm.sort.quick;
 
 import java.util.Arrays;
+import java.util.Random;
 
 /*
  * 
@@ -16,6 +17,8 @@ public class QuickSort_Prof {
 
 		int intArr[] = new int[] { 9, 6, 5, 0, 8, 4, 2, 7 };
 		intArr = new int[] { 13, 19, 9, 5, 12, 8, 7, 4, 21, 2, 6, 11 };
+		intArr = new int[] {1,2,1,0,4,3,4,-1};
+		intArr = new int[] {0,1,2,3,6,4,3};
 		new QuickSort_Prof().sort(intArr);
 
 		System.out.println(" " + Arrays.toString(intArr));
@@ -36,6 +39,7 @@ public class QuickSort_Prof {
 		int i = low, j = high;
 		// Get the pivot element from the middle of the list
 		int pivot = numbers[low + (high - low) / 2];
+		//int pivot = numbers[randomRange(low, high) ];
 
 		// Divide into two lists
 		while (i <= j) {
@@ -67,6 +71,13 @@ public class QuickSort_Prof {
 			quicksort(low, j);
 		if (i < high)
 			quicksort(i, high);
+	}
+	
+	private static int randomRange(int st, int ed) {
+		//System.out.println("st: "+st+" ed: "+ ed);
+		if(st>=ed) return st;
+		int rand = new Random().nextInt(ed - st);
+		return st+rand;
 	}
 
 	private void swap(int i, int j) {

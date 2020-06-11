@@ -11,6 +11,7 @@ public class QuickSortRevisit {
 		int[] ar3 = {10,1,5,6};
 		int[] ar4 = { 9, 6, 5, 0, 8, 4, 2, 7 };
 		int[] ar5 = { 13, 19, 9, 5, 12, 8, 7, 4, 21, 2, 6, 11 };
+		ar1 = new int[] {1,2,1,0,4,3,4,-1};
 		quickSort(ar1,0,ar1.length-1);
 		quickSort(ar2,0,ar2.length-1);
 		quickSort(ar3,0,ar3.length-1);

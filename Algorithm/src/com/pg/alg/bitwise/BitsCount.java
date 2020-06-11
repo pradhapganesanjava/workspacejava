@@ -6,23 +6,53 @@ import java.util.List;
 public class BitsCount {
 
 	public static void main(String[] args) {
-		int[] intArr = new int[]{197,235,162,1,2,10,16};
-		int tn = 197;
 		
-		//System.out.println("bitcount "+Integer.bitCount(162));
-		int i=0;
-		while(tn>>1>0){
-			if(((tn=tn>>1)&1) > 0){
-				System.out.println("match");
-				i++;
-			}else{
-				i=0;
+		rightShiftNsBit(11);
+		
+		leftShift1sBit(12);
+		
+		unsignedNsBit(Integer.MAX_VALUE+1);
+		
+		//int[] intArr = new int[]{197,235,162,1,2,10,16};
+		//countLSB(intArr);
+	}
+
+	private static void unsignedNsBit(int n) {
+		
+		int tn = n;
+		int cnt = 0;
+		
+		while(tn != 0) {
+			if( (tn & 1) == 1) {
+				cnt++;
 			}
-			System.out.println("i : "+i+" "+Integer.toBinaryString((tn)));
+			tn = tn >>> 1;
 		}
-		System.out.println(i);
+		System.out.format("(UNSIGNED) N: %d Bits: %s, Cnt: %d \n", n, Integer.toBinaryString(n), cnt);
+	}
+
+	private static void leftShift1sBit(int n) {
+		int cnt = 0;
 		
-//		countLSB(intArr);
+		for(int i=0; i<32; i++) {
+			if( (n & 1 << i ) > 0) {
+				cnt++;
+			}
+		}
+		System.out.format("N: %d Bits: %s, Cnt: %d \n", n, Integer.toBinaryString(n), cnt);
+	}
+
+	private static void rightShiftNsBit(int tn) {int cnt = 0;
+	int itn = tn;
+	while(tn > 0) {
+		
+		if( (tn & 1) > 0) {
+			cnt++;
+		}
+		tn = tn >> 1;
+		
+	}
+	System.out.format("N: %d Bits: %s, Cnt: %d \n", itn, Integer.toBinaryString(itn), cnt);
 	}
 
 	private static void countLSB(int[] intArr) {
