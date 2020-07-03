@@ -28,8 +28,8 @@ public class QuickSort {
 		}
 	}
 
-	private static int PARTITION(int[] intArr, int low, int high) {
-		int pivot = intArr[high];
+	private static int PARTITION(int[] intArr, int l, int end) {
+		int pivot = intArr[end];
 
 		/*
 			int randI = Math.random();   // a random number between 0 and 1
@@ -37,17 +37,15 @@ public class QuickSort {
 		    swap(intArr[low], intArr[pivot]);
 		 */
 		
-		System.out.format("st: %d, ed: %d, pv: %d IN-ARR: %s \n", low, high, pivot, Arrays.toString(intArr));
+		System.out.format("st: %d, ed: %d, pv: %d IN-ARR: %s \n", l, end, pivot, Arrays.toString(intArr));
 		
-		for (int count = low; count <= high - 1; count++) {
-			if (intArr[count] <= pivot) {
-				swap(intArr, low, count);
-				low++;
-			}
-		}
-		swap(intArr, low, high);
-		System.out.format("st: %d, ed: %d, pv: %d OUT-ARR: %s \n", low, high, low, Arrays.toString(intArr));
-		return low;
+		for (int r = l; r <= end - 1; r++) {
+			if (intArr[r] <= pivot) {
+				swap(intArr, l, r);
+				l++; } }
+		swap(intArr, l, end);
+		System.out.format("st: %d, ed: %d, pv: %d OUT-ARR: %s \n", l, end, l, Arrays.toString(intArr));
+		return l;
 	}
 
 	private static void swap(int[] intArr, int left, int right) {
