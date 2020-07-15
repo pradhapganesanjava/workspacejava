@@ -1,5 +1,7 @@
 package solstools.bit.operation;
 
+import java.util.Arrays;
+
 public class LeastSignificant {
 
 	public static void main(String[] args) {
@@ -11,6 +13,8 @@ public class LeastSignificant {
 			num = num>>1;
 		}
 
+		Arrays.copy
+		
 	}
 
 }
