@@ -1,9 +1,41 @@
 package solstools.array.path;
 
+
+/*
+ * 
+	<a href="https://leetcode.com/problems/reconstruct-itinerary/>332. Reconstruct Itinerary</a>
+	
+	Given a list of airline tickets represented by pairs of departure and arrival airports [from, to], 
+	reconstruct the itinerary in order. All of the tickets belong to a man who departs from JFK. 
+	Thus, the itinerary must begin with JFK.
+	
+	Note:
+	
+	If there are multiple valid itineraries, you should 
+	return the itinerary that has the smallest lexical order when read as a single string. 
+	For example, the itinerary ["JFK", "LGA"] has a smaller lexical order than ["JFK", "LGB"].
+	All airports are represented by three capital letters (IATA code).
+	You may assume all tickets form at least one valid itinerary.
+	One must use all the tickets once and only once.
+	Example 1:
+	
+	Input: [["MUC", "LHR"], ["JFK", "MUC"], ["SFO", "SJC"], ["LHR", "SFO"]]
+	Output: ["JFK", "MUC", "LHR", "SFO", "SJC"]
+	Example 2:
+	
+	Input: [["JFK","SFO"],["JFK","ATL"],["SFO","ATL"],["ATL","JFK"],["ATL","SFO"]]
+	Output: ["JFK","ATL","JFK","SFO","ATL","SFO"]
+	Explanation: Another possible reconstruction is ["JFK","SFO","ATL","JFK","ATL","SFO"].
+	             But it is larger in lexical order.
+
+ * 
+ */
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.PriorityQueue;
 
 public class ItineraryReconstruct {
 
@@ -25,9 +57,25 @@ public class ItineraryReconstruct {
 }
 class ItineraryReconstruct_Solution {
     public List<String> findItinerary(List<List<String>> tickets) {
-        return recur(tickets);
+        return chainRecur(tickets);
+        // return recur(tickets);
     }
     
+    private List<String> chainRecur(List<List<String>> lolst){
+        Map<String, PriorityQueue<String>> mp = new HashMap<>();
+        for(List<String> lst : lolst){
+            mp.computeIfAbsent(lst.get(0), (v) -> new PriorityQueue<String>()).add(lst.get(1));
+        }
+        List<String> rlst = new LinkedList<>();
+        chainRecur(mp, "JFK",rlst);
+        return rlst;
+    }
+    private void chainRecur(Map<String, PriorityQueue<String>> mp, String airprt, List<String> rlst){
+        while(mp.containsKey(airprt) && !mp.get(airprt).isEmpty()){
+            chainRecur(mp, mp.get(airprt).poll(), rlst);
+        }
+        rlst.add(0, airprt);
+    }
     private List<String> recur(List<List<String>> lolst){
         
         Map<String, List<String>> mplst = new HashMap<>();
