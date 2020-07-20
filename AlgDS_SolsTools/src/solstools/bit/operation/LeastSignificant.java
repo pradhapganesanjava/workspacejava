@@ -13,7 +13,7 @@ public class LeastSignificant {
 			num = num>>1;
 		}
 
-		Arrays.copy
+		
 		
 	}
 
