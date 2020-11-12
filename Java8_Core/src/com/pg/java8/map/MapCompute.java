@@ -1,5 +1,6 @@
 package com.pg.java8.map;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -24,6 +25,10 @@ public class MapCompute {
 			int rem = num - (int)Math.pow(2, lg);
 			System.out.format("(%f) %d = %d + %d \n",logBase2(num), num, lg, rem);
 		}
+		int[] nums = new int[]{1,2,4,7};
+		Arrays.sort(nums, nums.length-1, 0);
+		System.out.println(Arrays.toString(nums));
+				
 	}
 	private static double logBase2(int num) {
 		return (Math.log(num))/Math.log(2);
